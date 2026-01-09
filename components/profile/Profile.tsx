@@ -61,6 +61,26 @@ export default function ProfileScreen() {
             title="Favorites"
             onPress={() => console.log("Favs")}
           />
+          <ProfileMenuItem
+            icon="login"
+            title="Login"
+            onPress={() => router.push("/auth/login")}
+          />
+          <ProfileMenuItem
+            icon="sign"
+            title="Sign Up"
+            onPress={() => router.push("/auth/sign-up")}
+          />
+          <ProfileMenuItem
+            icon="reset"
+            title="Reset Password"
+            onPress={() => router.push("/auth/reset-password")}
+          />
+          <ProfileMenuItem
+            icon="forgot"
+            title="Forgot Password"
+            onPress={() => router.push("/auth/forgot-password")}
+          />
           {/* Link to your Contact Form */}
           <ProfileMenuItem
             icon="envelope.fill"

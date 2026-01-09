@@ -1,5 +1,5 @@
-import ContactForm from "@/components/auth/contact-form";
+import ContactUs from "@/components/contact-us/ContactUs";
 
 export default function contact() {
-  return <ContactForm />;
+  return <ContactUs />;
 }
