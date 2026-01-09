@@ -21,7 +21,7 @@ const contactSchema = z.object({
 // Infer the TypeScript type from the schema
 type ContactFormData = z.infer<typeof contactSchema>;
 
-export default function ContactForm() {
+export default function ContactUs() {
   const {
     control,
     handleSubmit,

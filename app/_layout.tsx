@@ -21,14 +21,17 @@ export default function RootLayout() {
     <ThemeProvider value={colorScheme === "dark" ? DarkTheme : DefaultTheme}>
       <Stack>
         <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+
         <Stack.Screen
-          name="modal"
-          options={{ presentation: "modal", title: "Modal" }}
+          name="product/[id]"
+          options={{
+            title: "Product Details", // This replaces "product/[id]"
+            headerBackTitle: "Back",
+            headerTitleStyle: {
+              fontWeight: "bold",
+            },
+          }}
         />
-        <Stack.Screen
-          name="contact-form"
-          options={{ title: "Contact Us" }} // Changes the header text to "Contact Us"
-        />{" "}
       </Stack>
       <StatusBar style="auto" />
     </ThemeProvider>

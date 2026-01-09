@@ -65,7 +65,7 @@ export default function ProfileScreen() {
           <ProfileMenuItem
             icon="envelope.fill"
             title="Contact Support"
-            onPress={() => router.push("/contact-form")}
+            onPress={() => router.push("/contact-us/contact")}
           />
         </View>
       </View>
